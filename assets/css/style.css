@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:var(--White);
+    font-family: 'fontStyle';
+}
+@font-face {
+    font-family: 'fontStyle';
+    src: url('/assets/fonts/static/Inter-Regular.ttf');
+}
+:root {
+    --Grey600: hsl(0, 0%, 80%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+}
+body {
+    background-color: var(--Grey900);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+}
+.card {
+    width:360px;
+    background-color: var(--Grey800);
+    border-radius: 15px;
+    padding:30px;
+}
+.card .card-header {
+    text-align: center;
+}
+.card .card-header img {
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border:1.5px solid var(--Green); */
+}
+.card .card-header h3 {
+    margin:15px 0 10px;
+}
+.card .card-header h5 {
+    color:var(--Green);
+    font-size: 13px;
+}
+.card .title {
+    font-size: 13px;
+    margin:25px 0 30px;
+    text-align: center;
+    color:var(--Grey600);
+}
+.card .card-body {
+    margin-top: 20px;
+}
+.card .card-body ul.social-link {
+    list-style-type: none;
+}
+.card .card-body ul.social-link li {
+    margin-bottom:12px;
+}
+.card .card-body ul.social-link li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: var(--Grey700);
+    padding:10px 0;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight:bold;
+    font-size: 14px;
+}
+.card .card-body ul.social-link li a:hover {
+    background-color: var(--Green);
+    color:var(--Grey900); 
+}
